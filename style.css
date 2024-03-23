@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background: wheat;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.logo img {
+  height: 3rem;
+  cursor: pointer;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  width: 30%;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: large;
+}
+
+.search-input {
+  border: 1px solid #000;
+  outline: none;
+  padding: 7px;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.search-btn {
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* card */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  /* border: 1px solid black; */
+  width: 30%;
+  min-height: 60vh;
+  padding: 20px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.active {
+  color: blue;
+}
+
+.title {
+  margin: 10px 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.publisher {
+  margin: 5px 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.news-desc {
+  margin: 5px 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(5, 3, 1);
+}
+
+.card-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.card-img img {
+  height: 175px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}

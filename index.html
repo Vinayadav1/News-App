@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav">
+        <a class="logo" onclick="reload()">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/11/26/16/28/vintage-1064142_640.png"
+            alt="Company logo"
+          />
+          <h2>Parso Tak</h2>
+        </a>
+        <ul class="nav-items">
+          <li class="nav-item" id="cricket" onclick="onNavItemClick('cricket')">
+            Cricket
+          </li>
+          <li
+            class="nav-item"
+            id="politics"
+            onclick="onNavItemClick('politics')"
+          >
+            Politics
+          </li>
+          <li
+            class="nav-item"
+            id="bollywood"
+            onclick="onNavItemClick('bollywood')"
+          >
+            Bollywood
+          </li>
+        </ul>
+        <div class="search">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="e.g. virat kohli"
+            id="search-bar-input"
+          />
+          <button class="search-btn" id="search-btn">Search</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="card-container" id="cards-container"></div>
+    </main>
+
+    <template id="template-card">
+      <div class="card">
+        <div class="card-img">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/11/26/16/28/vintage-1064142_640.png"
+            alt=""
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h2 class="title" id="card-title">This is demo card</h2>
+          <h3 class="publisher" id="news-source">BBC</h3>
+          <p class="news-desc" id="news-desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+            delectus beatae magnam? Impedit perspiciatis pariatur nam magnam
+            modi ipsa, commodi enim. Magnam ex repellat totam!
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
